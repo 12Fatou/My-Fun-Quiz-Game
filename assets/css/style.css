@@ -25,8 +25,43 @@ h1 {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    max-width: 70rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 34px;
 
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 2.4rem;
+    width: 490px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 32px 0;
+    color: #000;
+    background-color: #61470A;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    color: #6B6861;
+    background-color: #E6C67C;
+    transition: transform 200ms;
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    transform: none;
 }
